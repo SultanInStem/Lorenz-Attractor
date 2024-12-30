@@ -11,7 +11,7 @@ class Canvas:
         self.running = True 
         self.dt = 0.01
         self.screen_size = self.screen.get_size()
-        self.attractor = Attractor((1,0,0), 10, 19, 8/3)
+        self.attractor = Attractor(initial_pos=(1,0,0), omega=10, rho=19, beta=8/3, scale=10)
     def handle_events(self): 
         for event in pygame.event.get(): 
             if event.type == pygame.QUIT: 
@@ -25,6 +25,11 @@ class Canvas:
         self.clock.tick(60)
     def update(self):
         self.attractor.update(self.dt) 
+        keys = pygame.key.get_pressed()
+        if keys[pygame.K_UP]: 
+            self.attractor.zoom_in()
+        elif keys[pygame.K_DOWN]: 
+            self.attractor.zoom_out()
     def run(self):
         while(self.running):
             self.handle_events()
