@@ -1,6 +1,7 @@
 import pygame 
 from canvas import Canvas 
 if __name__ == "__main__": 
-    print("Hello bitches")
+    Main_Canvas = Canvas((1200,800))
+    Main_Canvas.run()
 
 

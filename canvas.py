@@ -13,12 +13,18 @@ class Canvas:
         for event in pygame.event.get(): 
             if event.type == pygame.QUIT: 
                 self.running = False
+    def render(self):
+        self.screen.fill((0,0,0))
 
+        pygame.display.flip()
+        self.clock.tick(60)
+    def update(self): 
+        pass
     def run(self):
         while(self.running):
-            pass 
-
-        
+            self.handle_events()
+            self.update()
+            self.render()
         pygame.quit()
         sys.exit()
 
