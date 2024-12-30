@@ -80,14 +80,8 @@ TIME_STEP = 0.01
 - Add 3D visualization support.
 - Allow dynamic parameter adjustment through the GUI.
 - Export attractor data to CSV for further analysis.
-
-## License
-This project is licensed under the MIT License. See `LICENSE` for details.
-
-## Acknowledgments
-- Edward Lorenz for his pioneering work on chaos theory.
-- The Pygame community for their excellent game development library.
+- Pause and reset functionalities
 
 ---
-Happy exploring the chaos of the Lorenz attractor!
+Feel free to explore the chaos of the Lorenz attractor!
 
