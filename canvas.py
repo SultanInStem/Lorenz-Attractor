@@ -6,7 +6,7 @@ class Canvas:
     def __init__(self, size): 
         pygame.init()
         self.screen = pygame.display.set_mode(size)
-        pygame.display.set_caption("Lorenz")
+        pygame.display.set_caption("Lorenz Attractor")
         self.clock = pygame.time.Clock()
         self.running = True 
         self.dt = 0.01
