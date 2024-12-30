@@ -73,8 +73,8 @@ INITIAL_STATE = (1,0,0)
 TIME_STEP = 0.01
 ```
 
-## Screenshots
-Add screenshots of the simulation running to showcase its appearance.
+## Demo
+![Lorenz Attractor in Action](demo.gif)
 
 ## Future Enhancements
 - Add 3D visualization support.
