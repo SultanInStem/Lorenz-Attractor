@@ -1,0 +1,4 @@
+SIGMA = 10 
+RHO = 28
+BETA = 8 / 3
+TIME_STEP = 0.01 

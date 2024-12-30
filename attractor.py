@@ -2,9 +2,9 @@ import pygame
 from globals import to_math_coords, to_screen_coords
 import colorsys 
 class Attractor: 
-    def __init__(self, initial_pos, omega, rho, beta, scale):
+    def __init__(self, initial_pos, sigma, rho, beta, scale):
         self.pos = initial_pos 
-        self.omega = omega 
+        self.sigma = sigma 
         self.rho = rho
         self.beta = beta
         self.points = [initial_pos] 
@@ -26,7 +26,7 @@ class Attractor:
         current_x = self.pos[0]
         current_y = self.pos[1] 
         current_z = self.pos[2]
-        dx = self.omega * (current_y - current_x) * dt
+        dx = self.sigma * (current_y - current_x) * dt
         dy = (current_x * (self.rho - current_z) - current_y) * dt
         dz = (current_x * current_y - self.beta * current_z) * dt 
         x = current_x + dx 
