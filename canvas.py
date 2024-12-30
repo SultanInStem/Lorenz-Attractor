@@ -11,7 +11,7 @@ class Canvas:
         self.running = True 
         self.dt = 0.01
         self.screen_size = self.screen.get_size()
-        self.attractor = Attractor((1,0,0), 10, 28, 8/3)
+        self.attractor = Attractor((1,0,0), 10, 19, 8/3)
     def handle_events(self): 
         for event in pygame.event.get(): 
             if event.type == pygame.QUIT: 

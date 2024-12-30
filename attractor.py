@@ -11,7 +11,7 @@ class Attractor:
         screen_size = screen.get_size()
         for i in range(0, len(self.points) - 1):
             print(self.points[i])
-            pos = to_screen_coords(self.points[i], screen_size, 4)[:2]
+            pos = to_screen_coords(self.points[i], screen_size, 10)[:2]
             pygame.draw.circle(screen, (255,255,255), pos, 1, 0)
     def update(self, dt):
         current_x = self.pos[0]
