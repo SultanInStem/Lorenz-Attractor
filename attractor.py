@@ -33,7 +33,10 @@ class Attractor:
         y = current_y + dy
         z = current_z + dz 
         self.pos = (x,y,z)
-        self.points.append(self.pos)
+        self.points.append(self.pos) 
+
+        self.min_z = min(self.min_z, z)
+        self.max_z = max(self.max_z, z)
     def zoom_out(self): 
         self.scale /= 1.1 
     def zoom_in(self): 
