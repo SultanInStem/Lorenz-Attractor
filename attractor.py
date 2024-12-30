@@ -9,8 +9,8 @@ class Attractor:
         self.beta = beta
         self.points = [initial_pos] 
         self.scale = scale
-        self.max_z = 40 
-        self.min_z = 0
+        self.max_z = initial_pos[2]
+        self.min_z = initial_pos[2]
     def z_to_color(self, normalized_z): 
         r, g, b = colorsys.hsv_to_rgb(0.7 * (1 - normalized_z), 1, 1) 
         return (int(r * 255), int(g * 255), int(b * 255))
