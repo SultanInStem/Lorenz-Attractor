@@ -33,8 +33,7 @@ python main.py
 ### Controls
 - **P**: Pause/Resume the simulation
 - **R**: Reset the simulation
-- **Up/Down Arrow Keys**: Increase/Decrease the speed of the simulation
-- **Mouse Scroll**: Zoom in/out
+- **Up/Down Arrow Keys**: Zoom in/out
 
 ## Lorenz System Equations
 The Lorenz system is defined by the following equations:
@@ -70,7 +69,7 @@ Modify the parameters in `config.py` to explore different behaviors of the Loren
 SIGMA = 10
 RHO = 28
 BETA = 8 / 3
-INITIAL_STATE = [1.0, 1.0, 1.0]
+INITIAL_STATE = (1,0,0)
 TIME_STEP = 0.01
 ```
 
