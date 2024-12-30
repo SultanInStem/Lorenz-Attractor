@@ -15,7 +15,6 @@ class Canvas:
                 self.running = False
     def render(self):
         self.screen.fill((0,0,0))
-
         pygame.display.flip()
         self.clock.tick(60)
     def update(self): 
